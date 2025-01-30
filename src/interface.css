@@ -1,5 +1,13 @@
 body {
     user-select: none;
+    background-image: url(../res/bg3.png);
+    overflow: hidden;
+}
+#divWrapper {
+    height: 100%;
+    overflow-y:scroll;
+    scrollbar-color: blue #C4D0FF;
+    scrollbar-width: thin;
 }
 table {
     text-align: center;
@@ -96,13 +104,14 @@ video {
 }
 #divCenter {
     overflow-y:scroll;
-    scrollbar-color: blue white;
+    scrollbar-color: blue #C4D0FF;
     scrollbar-width: thin;
-    border: 1px solid blue;
+    border: 1px solid #94BBFF;
     display: inline-block;
     vertical-align: top;
     width: 80%;
     height: 90%;
+    background: #C4D0FF;
     color: blue;
     font-size: 16px;
     font-family: "Verdana";
