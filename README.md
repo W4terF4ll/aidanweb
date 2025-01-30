@@ -1,4 +1,4 @@
-# PERSONAL WEBSITE
+# AidanWeb
 
 https://w4terf4ll.github.io/personalweb/
 
