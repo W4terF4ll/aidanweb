@@ -48,10 +48,18 @@ video {
 }
 #coverPng{
     height: 156px;
+    border-radius: 8px;
 }
 #coverImage{
     width: 156px;
     height: 156px;
+    border-radius: 8px;
+}
+#contactPng{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    border-radius: 5px;
 }
 #aboutHeader{
     display: block;
@@ -179,5 +187,17 @@ video {
 
 #divTop span:nth-child(8) {
     animation-delay: 0.8s;
+}
+
+#divTop span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+#divTop span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+#divTop span:nth-child(11) {
+    animation-delay: 1.1s;
 }
 
