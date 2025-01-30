@@ -24,6 +24,11 @@ video {
 .changed {
     animation: open 0.7s 1;
 }
+#chatbox {
+    margin-top: 15px;
+    width: 95%;
+    max-width: 200px;
+}
 #aboutLink {
     text-decoration: none;
     color: blue;
