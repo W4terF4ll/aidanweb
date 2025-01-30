@@ -1,5 +1,8 @@
 ## Changelog
 
+### v1.2 1/30/25
+Added CBox and styling!
+
 ### v1.1 1/30/25
 Personal links and rounded images added, slight tweaks.
 
