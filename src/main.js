@@ -1,15 +1,18 @@
 function reveal(num) {
-    changeAnim();
-
-}
-
-function changeAnim() {
     const center = document.getElementById("divCenter");
     center.classList.remove('changed');
     void center.offsetWidth;
     center.classList.add('changed');
-    const content = document.getElementById("divCenterContent");
-    content.classList.remove('changedText');
-    void content.offsetWidth;
-    content.classList.add('changedText');
+
+    const divsToHide = document.querySelectorAll(".content");
+    setTimeout(function(){
+        for(var i = 0; i < divsToHide.length; i++){
+            divsToHide[i].style.display = "none";
+        }
+        divsToHide[num].style.display = "block";
+    }, 350);
+}
+
+function disable() {
+    document.getElementById("formFood").disabled = true;
 }
