@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./src/interface.css" />
+		<script type="text/javascript" src="./src/main.js"> </script>
+		<meta charset="UTF-8">
+		<meta name="description" content="My Personal Website!!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> AidanWeb </title>
+		<link rel="shortcut icon" type="image/png" href=""/>
+    </head>
+    <body>
+        <div id="divTop">
+            <span>A</span>
+            <span>i</span>
+            <span>d</span>
+            <span>a</span>
+            <span>n</span>
+            <span>W</span>
+            <span>e</span>
+            <span>b</span>
+        </div>
+        <div id="wrapper">
+            <div id="divSide">
+                <span onclick="reveal(0)">> About Me</span>
+                <span onclick="reveal(1)">> Education</span>
+                <span onclick="reveal(2)">> Programming Skillz</span>
+                <span onclick="reveal(3)">> Personal Projects!</span>
+                <span onclick="reveal(4)">> Cool Media</span>
+                <span onclick="reveal(5)">> Cool Wesites</span>
+                <span onclick="reveal(6)">> Class Projects</span>
+            </div>
+            <div class="changed" id="divCenter">
+                <div class="changedText" id="divCenterContent">
+                    <div id="content0">
+                        <span id="aboutHeader">Welcome!</span>
+                        <p>My name is Aidan Jozefiak, and I'm 19 years old.</p>
+                        <p>I'm currently a Computer Science student at St. Johns University.</p>
+                        <figure>
+                            <img id="coverImage" src="res/cover.jpg"></img>
+                            <figcaption>me, my girlfriend enlin, and luna the otter</figcaption>
+                        </figure>
+                        <p>Here are some things I like doing!</p>
+                        <ul>
+                            <li>Programming</li>
+                                <ul>
+                                    <li>To view my projects, click HERE!</li>
+                                </ul>
+                            <li>Gaming</li>
+                                <ul>
+                                    <li>Counter Strike 2</li>
+                                    <li>Valorant</li>
+                                    <li>Pokemon</li>
+                                    <li>Minecraft</li>
+                                    <li>Roblox</li>
+                                    <li>Terraria</li>
+                                    <li>Rhythm Games</li>
+                                    <li>Incremental/Clicker Games</li>
+                                </ul>
+                            <li>Sewing</li>
+                                <ul>
+                                    <li>Plushies!</li>
+                                    <li>Embroidery Patches</li>
+                                </ul>
+                        </ul>
+                    </div>
+                    <div id="content1">
+                        <span id="aboutHeader">Education</span>
+                        <p>I completed high school at Xaverian High School.</p>
+                        <p>I'm currently enrolled at St. John's University, and am a 2nd year Computer Science major.</p>
+                        <p>At my current rate, I'm set to graduate next year!</p>
+                    </div>
+                    <div id="content2">
+                        <span id="aboutHeader">Skills</span>
+                        <p>I've been interested in programming since I was a kid, and have picked up a few skills along the way!</p>
+                        <p>I have good experience with:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                        <p>I have some experience with:</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>GDScript</li>
+                            <li>Lua</li>
+                            <li>Swift</li>
+                        </ul>
+                    </div>
+                    <div id="content3">
+                        <span id="aboutHeader">Projects!</span>
+                        <p>While I don't have any formal work experience, I do have a few projects I've worked on!</p>
+                        <p>Endless Rhythm, May 2024</p>
+                        <p>A browser based, procedurally generated rhythm game based on games such as Osu! Mania and Piano Tiles.</p>
+                        <p>The difficulty gradually scales, and you're also able to input custom patterns.</p>
+                        <p>It's mostly intended as a practice tool, and does not contain actual music.</p>
+                        <p>To try it out, click HERE!</p>
+                        <p>Drowsy Driving Alarm, May 2023</p>
+                        <p>During my senior year of High School, me and a group of 3 other friends worked together to build a drowsy driving alarm.</p>
+                        <p>Drowsy driving accounts for ~10% of all road crashes, and causes similar effects to drunkenness.</p>
+                        <p>Our device uses eye detection to send an alert when the driver's eyes are closed for an abnormaly large period of time.</p>
+                        <p>The alert sounds an alarm, causes the headrest to vibrate, and calls an emergency contact.</p>
+                        <p>To see it in action, click below!</p>
+                        <video controls src="res/drowsy.mp4"></video>
+                        <p>Incremental Cookies, January 2022</p>
+                        <p>Another browser game, where your goal is to bake as many cookies as possible.</p>
+                        <p>It was inspired by other incremental games such as Cookie Clicker.</p>
+                        <p>The game is short and unfinished, and it's one of the first web projects I ever worked on.</p>
+                        <p>To try it out, click HERE!</p>
+                    </div>
+                    <div id="content4">
+                        <span id="aboutHeader">Favorite Media!</span>
+                        <p>I mostly listen to rap and electronic music.</p>
+                        <p>Heres a few of my favorite artists!</p>
+                        <ul>
+                            <li>Kendrick Lamar</li>
+                            <li>Tyler the Creator</li>
+                            <li>Kanye West</li>
+                            <li>J. Cole</li>
+                            <li>Camellia</li>
+                            <li>Jane Remover</li>
+                            <li>femtanyl</li>
+                        </ul>
+                        <p>My current favorite song is: Like Him by Tyler the Creator</p>
+                        <p>To listen to my playlists, click HERE!</p>
+                        <p>My current favorite YouTubers are: Vinesauce & Vargskelethor</p>
+                        <p>I've also been watching more shows recently, so here's a few of my favories!</p>
+                        <ul>
+                            <li>The Office</li>
+                            <li>The Good Place</li>
+                            <li>Squid Game</li>
+                            <li>South Park</li>
+                            <li>MasterChef</li>
+                        </ul>
+                        <p>My current favorite show is: Brooklyn 99</p>
+                        <p>I haven't seen many movies, but my current top pick would be Hot Frosty (it's PEAK)</p>
+                    </div>
+                    <div id="content5">
+                        <span id="aboutHeader">Aidan's Top Website Picks!</span>
+                        <p>Here are some fun/interesting websites that I've found over my time on the internet!</p>
+                        <p>Neocities</p>
+                        <p>This website is actually a giant collection of personal websites, brimming with creativity and early 1990s-2000s vibes.</p>
+                        <p>For me, it's easy to get lost for hours, clicking from website to website, and it can be really inspiring creatively looking at what other people have made.</p>
+                        <p>Windows93</p>
+                        <p>An operating system in your browser, packed with games, tools, and a lot of charm.</p>
+                        <p>The games can be pretty fun, but they're mostly joke programs.</p>
+                        <p>Neal.fun</p>
+                        <p>A collection of games and other informative programs made by Neal.</p>
+                        <p>My personal favorites include Infinite Craft, Spend Bill Gate's Money, The Password Game, Stimulation Clicker, and Internet Artifacts.</p>
+                        <p>The Useless Web</p>
+                        <p>A bunch of fun, random, and useless websites, all at the press of a button.</p>
+                        <p>This is one of the earliest websites I remember showing my friends, and can be pretty fun to browse when bored.</p>
+                        <p>Universal Paperclips</p>
+                        <p>One of the earlist and most popular incremental games, where the goal is to make as many paperclips as possible.</p>
+                        <p>An easy way to sink a few hours when bored in class.</p>
+                        <p>Piskel</p>
+                        <p>A free pixel art editor, allowing you to make art and animations in the website.</p>
+                        <p>It's pretty fun to play around with, and anything you make can be exported and used elsewhere.</p>
+                        <p>Vimm's Lair</p>
+                        <p>This website has a ton of old console games, from the Atari 2600 all the way up to the Wii.</p>
+                        <p>I mainly use this website to download old Pokemon games from the DS and Wii era.</p>
+                </div>
+                <div id="content6">
+                    <span id="aboutHeader">Class Projects</span>
+                    <p>nothing to see here (yet...)</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
