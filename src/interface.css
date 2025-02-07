@@ -1,13 +1,52 @@
+@media screen and (max-width: 900px) {
+    #divSide {
+        width: 650px;
+        max-width: 100%;
+    }
+    #chatbox {
+        max-width: 100%;
+        width: 650px;
+    }
+}
+@media screen and (min-width: 900px) {
+    #divSide {
+        width: 200px;
+        max-width: 95%;
+    }
+    #chatbox {
+        width: 95%;
+        max-width: 200px;
+    }
+}
 body {
     user-select: none;
     background-image: url(../res/bg3.png);
     overflow: hidden;
 }
+div {
+    color: #2a69d4;
+}
+img {
+    border-radius: 5px;
+}
+form {
+    margin-top: 5px;
+}
 #divWrapper {
     height: 100%;
     overflow-y:scroll;
-    scrollbar-color: blue #C4D0FF;
+    scrollbar-color: #2a69d4 #C4D0FF;
     scrollbar-width: thin;
+}
+#divSideWrapper {
+    border: 1px solid #94BBFF;
+    background: #C4D0FF;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divSideHeader {
+    overflow:hidden;
+    background: linear-gradient(90deg, #94BBFF, lightblue);
 }
 table {
     text-align: center;
@@ -17,13 +56,15 @@ table {
 li {
     margin-bottom: 5px;
 }
+ul {
+    margin-top: 5px;
+}
 figure {
     margin-left: 0;
 }
 figcaption{
     color: grey;
     font-style: italic;
-    font-size: 10px;
 }
 video {
     width: 256px;
@@ -34,8 +75,9 @@ video {
 }
 #chatbox {
     margin-top: 15px;
-    width: 95%;
-    max-width: 200px;
+}
+a {
+    cursor: pointer;
 }
 #aboutLink {
     text-decoration: none;
@@ -48,7 +90,6 @@ video {
     font-weight: bold;
     font-size: 12;
     text-decoration: none;
-    cursor: pointer;
 }
 #minorHeader {
     margin-top: 32px;
@@ -61,68 +102,92 @@ video {
 }
 #coverPng{
     height: 156px;
-    border-radius: 8px;
 }
 #coverImage{
     width: 156px;
     height: 156px;
-    border-radius: 8px;
 }
 #contactPng{
     width: 24px;
     height: 24px;
-    margin-bottom: 3px;
-    border-radius: 5px;
-}
-#aboutHeader{
-    display: block;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 #divSide {
-    cursor: pointer;
     display: inline-block;
-    width: 15%;
 }
 #divSide span {
-    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     display: block;
-    color: blue;
     font-size: 16px;
-    font-family: "Verdana";
+    font-family: PixelOperator;
     transition: transform .2s;
     transform-origin: left; 
 }
+#divSide p {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: block;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
 #divSide span:hover {
     display: block;
-    transform: scale(1.5);
+    transform: scale(1.1);
     transform-origin: left; 
 }
 #divCenterContent {
     margin: 15px;
 }
 #divCenter {
+    display:block;
     overflow-y:scroll;
-    scrollbar-color: blue #C4D0FF;
+    scrollbar-color: #2a69d4 #C4D0FF;
     scrollbar-width: thin;
-    border: 1px solid #94BBFF;
+    height: 92%;
+}
+#divCenterWrapper {
     display: inline-block;
     vertical-align: top;
-    width: 80%;
-    height: 90%;
+    width: 650px;
+    border: 1px solid #94BBFF;
+    height: 89%;
     background: #C4D0FF;
-    color: blue;
     font-size: 16px;
-    font-family: "Verdana";
+    font-family: PixelOperator;
+}
+#contentHeader {
+    overflow:hidden;
+    display:block;
+    background: linear-gradient(90deg, #94BBFF, lightblue);
+    height: 40px;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+@font-face {
+    font-family: VeniceClassic; src:url(../res/VeniceClassic.ttf);
+}
+@font-face {
+    font-family: PixelOperator; src:url(../res/PixelOperator.ttf);
 }
 #divTop span {
+    font-size: 72px;
+    background: -webkit-linear-gradient(lightblue, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     display: inline-block;
-    color: blue;
     font-size: 40px;
-    font-family: "Verdana";
-    animation: animate 1s infinite;
+    animation: animate 3s infinite;
+    font-family: VeniceClassic
 }
 #0 {
     display: block;
@@ -172,46 +237,46 @@ video {
     }
 }
 #divTop span:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-#divTop span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-#divTop span:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-#divTop span:nth-child(4) {
     animation-delay: 0.4s;
 }
 
-#divTop span:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-#divTop span:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
-#divTop span:nth-child(7) {
-    animation-delay: 0.7s;
-}
-
-#divTop span:nth-child(8) {
+#divTop span:nth-child(2) {
     animation-delay: 0.8s;
 }
 
+#divTop span:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+#divTop span:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+#divTop span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+#divTop span:nth-child(6) {
+    animation-delay: 2.4s;
+}
+
+#divTop span:nth-child(7) {
+    animation-delay: 2.8s;
+}
+
+#divTop span:nth-child(8) {
+    animation-delay: 3.2s;
+}
+
 #divTop span:nth-child(9) {
-    animation-delay: 0.9s;
+    animation-delay: 3.6s;
 }
 
 #divTop span:nth-child(10) {
-    animation-delay: 1s;
+    animation-delay: 4s;
 }
 
 #divTop span:nth-child(11) {
-    animation-delay: 1.1s;
+    animation-delay: 4.4s;
 }
 

@@ -1,0 +1,199 @@
+@media print {
+    p {
+        color: black;
+    }
+    body {
+        user-select: none;
+        background-image: url(../res/bg3.png);
+        overflow: hidden;
+        color: black;
+    }
+    img {
+        border-radius: 5px;
+    }
+    form {
+        color: black;
+        margin-top: 5px;
+    }
+    #divWrapper {
+        color: black;
+        height: 100%;
+        overflow-y:visible;
+    }
+    #divSideWrapper {
+        color: black;
+        border: 0px solid grey;
+        width: 95%;
+        font-size: 16px;
+        font-family: PixelOperator;
+    }
+    #divSideHeader {
+        color: black;
+        overflow:hidden;
+    }
+    table {
+        text-align: center;
+        font-size: 14px;
+    }
+    li {
+        color: black;
+        margin-bottom: 5px;
+    }
+    ul {
+        color: black;
+        margin-top: 5px;
+    }
+    figure {
+        color: black;
+        margin-left: 0;
+    }
+    figcaption{
+        font-style: italic;
+    }
+    video {
+        width: 256px;
+        height: 156px;
+    }
+    .changed {
+        animation: open 0.7s 1;
+    }
+    #chatbox {
+        margin-top: 15px;
+        width: 95%;
+        max-width: 200px;
+    }
+    a {
+        cursor: pointer;
+    }
+    #aboutLink {
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #minorLink {
+        font-weight: bold;
+        font-size: 12;
+        text-decoration: none;
+    }
+    #minorHeader {
+        margin-top: 32px;
+        font-weight: bold;
+    }
+    #date {
+        font-weight: 100;
+        font-size: 12px;
+    }
+    #coverPng{
+        height: 156px;
+    }
+    #coverImage{
+        width: 156px;
+        height: 156px;
+    }
+    #contactPng{
+        width: 24px;
+        height: 24px;
+        margin-bottom: 1px;
+    }
+    #divSide {
+        display: inline-block;
+        width: 200px;
+    }
+    #divSide span {
+        color: black;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        display: block;
+        font-size: 16px;
+        font-family: PixelOperator;
+        transition: transform .2s;
+        transform-origin: left; 
+    }
+    #divSide p {
+        color: black;
+        margin-left: 5px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        display: block;
+        font-size: 16px;
+        font-family: PixelOperator;
+    }
+    #divSide span:hover {
+        display: block;
+        transform: scale(1.1);
+        transform-origin: left; 
+    }
+    #divCenterContent {
+        margin: 15px;
+    }
+    #divCenter {
+        overflow-y:visible;
+        color: black;
+        display:block;
+        height: 92%;
+    }
+    #divCenterWrapper {
+        overflow-y:visible;
+        display: inline-block;
+        vertical-align: top;
+        width: 70%;
+        border: 0px solid grey;
+        height: 89%;
+        font-size: 16px;
+        font-family: PixelOperator;
+    }
+    #contentHeader {
+        color: black;
+        overflow:hidden;
+        display:block;
+        background: grey;
+        height: 40px;
+    }
+    h1 {
+        color: black;
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 8px;
+        margin-left: 15px;
+    }
+    @font-face {
+        font-family: VeniceClassic; src:url(../res/VeniceClassic.ttf);
+    }
+    @font-face {
+        font-family: PixelOperator; src:url(../res/PixelOperator.ttf);
+    }
+    #divTop span {
+        color: black;
+        font-size: 72px;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-size: 40px;
+        animation: animate 3s infinite;
+        font-family: VeniceClassic
+    }
+    #0 {
+        display: block;
+    }
+    #1 {
+        display: none;
+    }
+    #2 {
+        display: none;
+    }
+    #3 {
+        display: none;
+    }
+    #4 {
+        display: none;
+    }
+    #5 {
+        display: none;
+    }
+    #6 {
+        display: none;
+    }
+}
+
