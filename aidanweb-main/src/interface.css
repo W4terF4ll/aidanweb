@@ -1,0 +1,301 @@
+@media screen and (max-width: 800px) {
+    #divSideWrapper {
+        max-width: 650px;
+        width: 650px;
+    }
+    #chatbox {
+        max-width: 650px;
+        width: 640px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #divSideWrapper {
+        max-width: 215px;
+    }
+    #chatbox {
+        max-width: 205px;
+    }
+}
+
+@font-face {
+    font-family: VeniceClassic; src:url(../res/VeniceClassic.ttf);
+}
+@font-face {
+    font-family: PixelOperator; src:url(../res/PixelOperator.ttf);
+}
+
+html {
+    overflow-y:scroll;
+    scrollbar-color: #2a69d4 #C4D0FF;
+    scrollbar-width: thin;
+}
+body {
+    user-select: none;
+    background-image: url(../res/bg3.png);
+}
+h1 {
+    display: block;
+}
+div {
+    color: #2a69d4;
+}
+img {
+    border-radius: 5px;
+}
+form {
+    margin-top: 5px;
+}
+table {
+    text-align: center;
+    color: blue;
+    font-size: 14px;
+}
+li {
+    margin-bottom: 5px;
+}
+ul {
+    margin-top: 5px;
+}
+figure {
+    margin-left: 0px;
+}
+figcaption{
+    color: grey;
+    font-style: italic;
+}
+video {
+    width: 256px;
+    height: 156px;
+}
+a {
+    cursor: pointer;
+}
+
+#divWrapper {
+    scrollbar-color: #2a69d4 #C4D0FF;
+    scrollbar-width: thin;
+}
+#aboutLink {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+#minorLink {
+    color: grey;
+    font-weight: bold;
+    font-size: 12;
+    text-decoration: none;
+}
+#minorHeader {
+    margin-top: 32px;
+    font-weight: bold;
+}
+#date {
+    font-weight: 100;
+    color: grey;
+    font-size: 12px;
+}
+#coverPng{
+    height: 156px;
+}
+#coverImage{
+    width: 156px;
+    height: 156px;
+}
+#contactPng{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1px;
+}
+
+#divCenterWrapper {
+    width: 650px;
+    min-width: 650px;
+    max-width: 650px;
+    padding: 0px;
+    vertical-align: top;
+    border: 1px solid #94BBFF;
+    background: #C4D0FF;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divCenterContent {
+    margin: 15px;
+}
+#divCenter {
+    animation: inherit;
+    overflow-y:scroll;
+    scrollbar-color: #2a69d4 #C4D0FF;
+    scrollbar-width: thin;
+    height: 80vh;
+}
+#contentHeader {
+    overflow:hidden;
+    background: linear-gradient(90deg, #94BBFF, lightblue);
+    height: 40px;
+}
+#aboutHeader {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.changed {
+    animation: open 0.7s 1;
+}
+
+#0 {
+    display: block;
+}
+#1 {
+    display: none;
+}
+#2 {
+    display: none;
+}
+#3 {
+    display: none;
+}
+#4 {
+    display: none;
+}
+#5 {
+    display: none;
+}
+#6 {
+    display: none;
+}
+
+@keyframes open {
+    0% {
+        height: 85vh;
+    }
+
+    50% {
+        height: 0vh;
+    }
+
+    100% {
+        height: 85vh;
+    }
+}
+
+#divSideWrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#divSide{
+    border: 1px solid #94BBFF;
+    background: #C4D0FF;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divSideHeader {
+    background: linear-gradient(90deg, #94BBFF, lightblue);
+}
+#divSide span {
+    cursor: pointer;
+    display: block;
+    line-height: normal;
+    height: 17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: PixelOperator;
+    transition: transform .2s;
+    transform-origin: left; 
+}
+#divSide p {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: block;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divSide span:hover {
+    display: block;
+    transform: scale(1.1);
+    transform-origin: left; 
+}
+#chatbox {
+    border-width: 1px;
+    margin-top:5px;
+    margin-right:5px;
+}
+
+#divTopWrapper {
+    padding-left: 5px;
+}
+
+#divTop span {
+    display: inline-block;
+    background: -webkit-linear-gradient(lightblue, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    animation: animate 3s infinite;
+    font-family: VeniceClassic;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#divTop span:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+#divTop span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+#divTop span:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+#divTop span:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+#divTop span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+#divTop span:nth-child(6) {
+    animation-delay: 2.4s;
+}
+
+#divTop span:nth-child(7) {
+    animation-delay: 2.8s;
+}
+
+#divTop span:nth-child(8) {
+    animation-delay: 3.2s;
+}
+
+#divTop span:nth-child(9) {
+    animation-delay: 3.6s;
+}
+
+#divTop span:nth-child(10) {
+    animation-delay: 4s;
+}
+
+#divTop span:nth-child(11) {
+    animation-delay: 4.4s;
+}
+
