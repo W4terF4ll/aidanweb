@@ -1,40 +1,27 @@
-@media screen and (max-width: 800px) {
-    #divSideWrapper {
-        max-width: 650px;
+@media screen and (max-width: 900px) {
+    #divSide {
+        width: 650px;
+        max-width: 100%;
+    }
+    #chatbox {
+        max-width: 100%;
         width: 650px;
     }
-    #chatbox {
-        max-width: 650px;
-        width: 640px;
-    }
 }
-@media screen and (min-width: 800px) {
-    #divSideWrapper {
-        max-width: 215px;
+@media screen and (min-width: 900px) {
+    #divSide {
+        width: 200px;
+        max-width: 95%;
     }
     #chatbox {
-        max-width: 205px;
+        width: 95%;
+        max-width: 200px;
     }
-}
-
-@font-face {
-    font-family: VeniceClassic; src:url(../res/VeniceClassic.ttf);
-}
-@font-face {
-    font-family: PixelOperator; src:url(../res/PixelOperator.ttf);
-}
-
-html {
-    overflow-y:scroll;
-    scrollbar-color: #2a69d4 #C4D0FF;
-    scrollbar-width: thin;
 }
 body {
     user-select: none;
     background-image: url(../res/bg3.png);
-}
-h1 {
-    display: block;
+    overflow: hidden;
 }
 div {
     color: #2a69d4;
@@ -44,6 +31,22 @@ img {
 }
 form {
     margin-top: 5px;
+}
+#divWrapper {
+    height: 100%;
+    overflow-y:scroll;
+    scrollbar-color: #2a69d4 #C4D0FF;
+    scrollbar-width: thin;
+}
+#divSideWrapper {
+    border: 1px solid #94BBFF;
+    background: #C4D0FF;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divSideHeader {
+    overflow:hidden;
+    background: linear-gradient(90deg, #94BBFF, lightblue);
 }
 table {
     text-align: center;
@@ -57,7 +60,7 @@ ul {
     margin-top: 5px;
 }
 figure {
-    margin-left: 0px;
+    margin-left: 0;
 }
 figcaption{
     color: grey;
@@ -67,13 +70,14 @@ video {
     width: 256px;
     height: 156px;
 }
+.changed {
+    animation: open 0.7s 1;
+}
+#chatbox {
+    margin-top: 15px;
+}
 a {
     cursor: pointer;
-}
-
-#divWrapper {
-    scrollbar-color: #2a69d4 #C4D0FF;
-    scrollbar-width: thin;
 }
 #aboutLink {
     text-decoration: none;
@@ -108,44 +112,83 @@ a {
     height: 24px;
     margin-bottom: 1px;
 }
-
-#divCenterWrapper {
-    width: 650px;
-    min-width: 650px;
-    max-width: 650px;
-    padding: 0px;
-    vertical-align: top;
-    border: 1px solid #94BBFF;
-    background: #C4D0FF;
+#divSide {
+    display: inline-block;
+}
+#divSide span {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: block;
     font-size: 16px;
     font-family: PixelOperator;
+    transition: transform .2s;
+    transform-origin: left; 
+}
+#divSide p {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: block;
+    font-size: 16px;
+    font-family: PixelOperator;
+}
+#divSide span:hover {
+    display: block;
+    transform: scale(1.1);
+    transform-origin: left; 
 }
 #divCenterContent {
     margin: 15px;
 }
 #divCenter {
-    animation: inherit;
+    display:block;
     overflow-y:scroll;
     scrollbar-color: #2a69d4 #C4D0FF;
     scrollbar-width: thin;
-    height: 80vh;
+    height: 92%;
+}
+#divCenterWrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 650px;
+    border: 1px solid #94BBFF;
+    height: 89%;
+    background: #C4D0FF;
+    font-size: 16px;
+    font-family: PixelOperator;
 }
 #contentHeader {
     overflow:hidden;
+    display:block;
     background: linear-gradient(90deg, #94BBFF, lightblue);
     height: 40px;
 }
-#aboutHeader {
+h1 {
+    display: block;
     font-weight: bold;
     font-size: 24px;
     margin-top: 8px;
     margin-left: 15px;
 }
-
-.changed {
-    animation: open 0.7s 1;
+@font-face {
+    font-family: VeniceClassic; src:url(../res/VeniceClassic.ttf);
 }
-
+@font-face {
+    font-family: PixelOperator; src:url(../res/PixelOperator.ttf);
+}
+#divTop span {
+    font-size: 72px;
+    background: -webkit-linear-gradient(lightblue, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 40px;
+    animation: animate 3s infinite;
+    font-family: VeniceClassic
+}
 #0 {
     display: block;
 }
@@ -167,80 +210,19 @@ a {
 #6 {
     display: none;
 }
-
 @keyframes open {
     0% {
-        height: 85vh;
+        height: 90%;
     }
 
     50% {
-        height: 0vh;
+        height: 0%;
     }
 
     100% {
-        height: 85vh;
+        height: 90%;
     }
 }
-
-#divSideWrapper {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-#divSide{
-    border: 1px solid #94BBFF;
-    background: #C4D0FF;
-    font-size: 16px;
-    font-family: PixelOperator;
-}
-#divSideHeader {
-    background: linear-gradient(90deg, #94BBFF, lightblue);
-}
-#divSide span {
-    cursor: pointer;
-    display: block;
-    line-height: normal;
-    height: 17px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 5px;
-    font-size: 16px;
-    font-family: PixelOperator;
-    transition: transform .2s;
-    transform-origin: left; 
-}
-#divSide p {
-    margin-left: 5px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    display: block;
-    font-size: 16px;
-    font-family: PixelOperator;
-}
-#divSide span:hover {
-    display: block;
-    transform: scale(1.1);
-    transform-origin: left; 
-}
-#chatbox {
-    border-width: 1px;
-    margin-top:5px;
-    margin-right:5px;
-}
-
-#divTopWrapper {
-    padding-left: 5px;
-}
-
-#divTop span {
-    display: inline-block;
-    background: -webkit-linear-gradient(lightblue, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    animation: animate 3s infinite;
-    font-family: VeniceClassic;
-}
-
 @keyframes animate {
     0% {
         transform: translateY(0px);
@@ -254,7 +236,6 @@ a {
         transform: translateY(0px);
     }
 }
-
 #divTop span:nth-child(1) {
     animation-delay: 0.4s;
 }

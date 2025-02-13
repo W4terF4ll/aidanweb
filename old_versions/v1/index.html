@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./src/interface.css" />
+		<script type="text/javascript" src="./src/main.js"> </script>
+		<meta charset="UTF-8">
+		<meta name="description" content="My Personal Website!!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> AidanWeb </title>
+		<link rel="shortcut icon" type="image/png" href="res/globe.png"/>
+    </head>
+    <body>
+        <div id="divTop">
+            <span>A</span>
+            <span>i</span>
+            <span>d</span>
+            <span>a</span>
+            <span>n</span>
+            <span>W</span>
+            <span>e</span>
+            <span>b</span>
+            <span style="margin-left: 10px"><a target="_blank" href="https://github.com/W4terF4ll"><img id="contactPng" src="res/github.png"></img></a></span>
+            <span style="margin-left: 5px"><a target="_blank" href="https://www.youtube.com/@w5terf5ll"><img id="contactPng" src="res/youtube.png"></img></a></span>
+            <span style="margin-left: 5px"><a target="_blank" href="https://steamcommunity.com/id/W4terF5ll/"><img id="contactPng" src="res/steam.png"></img></a></span>
+        </div>
+        <div id="wrapper">
+            <div id="divSide">
+                <span onclick="reveal(0)">> About Me</span>
+                <span onclick="reveal(1)">> Education</span>
+                <span onclick="reveal(2)">> Programming Skillz</span>
+                <span onclick="reveal(3)">> Personal Projects!</span>
+                <span onclick="reveal(4)">> Cool Media</span>
+                <span onclick="reveal(5)">> Cool Wesites</span>
+                <span onclick="reveal(6)">> Class Projects</span>
+            </div>
+            <div id="divCenter">
+                <div id="divCenterContent">
+                    <div class="content">
+                        <h1 id="aboutHeader">Welcome!</h1>
+                        <p>My name is Aidan Jozefiak, and I'm 19 years old.</p>
+                        <p>I'm currently a Computer Science student at St. Johns University.</p>
+                        <figure>
+                            <img id="coverImage" src="res/cover.jpg"></img>
+                            <figcaption>me, my girlfriend enlin, and luna the otter</figcaption>
+                        </figure>
+                        <p>Here are some things I like doing!</p>
+                        <ul>
+                            <li>Programming</li>
+                                <ul>
+                                    <li>To view my projects, click <span id="aboutLink" onclick="reveal(3)">HERE!</span></li>
+                                </ul>
+                            <li>Gaming</li>
+                                <ul>
+                                    <li>Counter Strike 2</li>
+                                    <li>Valorant</li>
+                                    <li>Pokemon</li>
+                                    <li>Minecraft</li>
+                                    <li>Roblox</li>
+                                    <li>Terraria</li>
+                                    <li>Rhythm Games</li>
+                                    <li>Incremental/Clicker Games</li>
+                                </ul>
+                            <li>Sewing</li>
+                                <ul>
+                                    <li>Plushies!</li>
+                                    <figure>
+                                        <img id="coverImage" src="res/sylveon.png"></img>
+                                        <img id="coverImage" src="res/eevee.png"></img>
+                                        <figcaption>the first plushies i made ♥</figcaption>
+                                    </figure>
+                                    <li>Embroidery Patches</li>
+                                    <figure>
+                                        <img id="coverPng" src="res/embroider.png"></img>
+                                        <figcaption>embroidery patches i've made</figcaption>
+                                    </figure>
+                                </ul>
+                        </ul>
+                        <form>
+                            <label>And just for fun, what is YOUR favorite food?</label>
+                            <input type="text" id="formFood"></input>
+                            <button type='button' onclick="disable()">Submit!</button> 
+                        </form>
+                    </div>
+                    <div style="display: none;" class="content">
+                        <span id="aboutHeader">Education</span>
+                        <p>I graduated high school in 2023 at Xaverian High School.</p>
+                        <p>I'm currently enrolled at St. John's University, and I'm a 2nd year Computer Science major.</p>
+                        <p>At my current rate, I'm set to graduate next year!</p>
+                        <p>Here's a table of my completed courses. (not including classes im currently taking)</p>
+                        <table>
+                            <tr>
+                                <th>University Core</th>
+                                <th>Computer Science</th>
+                                <th>College Core</th>
+                            </tr>
+                                <td>FYS 1000 20th Century History NYC</td>
+                                <td>CUS 1115 Computer Prog Fund I</td>
+                                <td>MTH 1730C Core: University Calculus I</td>
+                            <tr>
+                            </tr>
+                            <tr>
+                                <td>ENG 1100 Lit in a Global Context</td>
+                                <td>CUS 1116 Computer Prog Fund II</td>
+                                <td>MTH 1010 Calculus II</td>
+                            </tr>
+                            <tr>
+                                <td>FYW 1000 English Composition</td>
+                                <td>CUS 1126 Intro to Data Structures</td>
+                                <td>MTH 1013 Probability and Statistics I</td>
+                            </tr>
+                            <tr>
+                                <td>HIS 1000 Emergence of a Global Society</td>
+                                <td>CUS 1156 Software Design Methods</td>
+                                <td>ECO 1002 Principles of Economics II</td>
+                            </tr>
+                            <tr>
+                                <td>PHI 1000 Phil of the Human Person</td>
+                                <td>CUS 1185 Data Security & Cryptography</td>
+                            </tr>
+                            <tr>
+                                <td>PHI 3000 Metaphysics</td>
+                                <td>NET 1011 Introduction to Networks</td>
+                            </tr>
+                            <tr>
+                                <td>SPE 1000 Public Speaking</td>
+                            </tr>
+                            <tr>
+                                <td>THE 1000 Perspectives on Christianity</td>
+                            </tr>
+                            <tr>
+                                <td>ECON 1320 Poverty & Income Inequality</td>
+                            </tr>
+                            <tr>
+                                <td>PHI 2200 Ethics</td>
+                            </tr>
+                            <tr>
+                                <td>THE 2400 Christian Spirituality & Myst</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="display: none;" class="content">
+                        <span id="aboutHeader">Skills</span>
+                        <p>I've been interested in programming since I was a kid, and have picked up a few skills along the way!</p>
+                        <p>My experience is mostly from small webgames and programs I've made, but I also have some experience with game development software languages.</p>
+                        <p>I have good experience with:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                        <p>I have some experience with:</p>
+                        <ul>
+                            <li>PHP</li>
+                            <li>C#</li>
+                            <li>GDScript</li>
+                            <li>Lua</li>
+                            <li>Swift</li>
+                        </ul>
+                        <img id="coverImage" src="https://media1.tenor.com/m/XPRG-4ujVMIAAAAd/cat-work-in-progress.gif"></img>
+                    </div>
+                    <div style="display: none;" class="content">
+                        <span id="aboutHeader">Projects!</span>
+                        <p>While I don't have any formal work experience, I do have a few projects I've worked on!</p>
+                        <p id="minorHeader">Endless Rhythm <span id="date">May 2024</span></p>
+                        <p>A browser based, procedurally generated rhythm game based on games such as Osu! Mania and Piano Tiles.</p>
+                        <p>The difficulty gradually scales, and you're also able to input custom patterns.</p>
+                        <p>It's mostly intended as a practice tool, and does not contain actual music.</p>
+                        <p>To try it out, click <a id="aboutLink" target="_blank" href="https://w4terf4ll.github.io/endless-rhythm/">HERE!</a></p>
+                        <p id="minorHeader">Drowsy Driving Alarm <span id="date">May 2023</span></p>
+                        <p>During my senior year of High School, me and a group of 3 other friends worked together to build a drowsy driving alarm.</p>
+                        <p>Drowsy driving accounts for ~10% of all road crashes, and causes similar effects to drunkenness.</p>
+                        <p>Our device uses eye detection to send an alert when the driver's eyes are closed for an abnormaly large period of time.</p>
+                        <p>The alert sounds an alarm, causes the headrest to vibrate, and calls an emergency contact.</p>
+                        <p>To see it in action, click below!</p>
+                        <video controls src="res/drowsy.mp4"></video>
+                        <p id="minorHeader">Incremental Cookies <span id="date">January 2022</span></p>
+                        <p>Another browser game, where your goal is to bake as many cookies as possible.</p>
+                        <p>It was inspired by other incremental games such as Cookie Clicker.</p>
+                        <p>The game is short and unfinished, and it's one of the first web projects I ever worked on.</p>
+                        <p>To try it out, click <a id="aboutLink" target="_blank" href="https://w4terf4ll.github.io/incremental-cookies/">HERE!</a></p>
+                    </div>
+                    <div style="display: none;" class="content">
+                        <span id="aboutHeader">Favorite Media!</span>
+                        <p>I mostly listen to rap and electronic music.</p>
+                        <p>Heres a few of my favorite artists!</p>
+                        <ul>
+                            <li>Kendrick Lamar</li>
+                            <li>Tyler the Creator</li>
+                            <li>Kanye West</li>
+                            <li>J. Cole</li>
+                            <li>Camellia</li>
+                            <li>Jane Remover</li>
+                            <li>femtanyl</li>
+                        </ul>
+                        <p>My current favorite song is: Like Him by Tyler the Creator (its so sad..)</p>
+                        <p>To listen to my playlists, click <a id="aboutLink" target="_blank" href="https://open.spotify.com/user/umsvpuf76tqshd8j3a9ebifk4/playlists">HERE!</a></p>
+                        <p>My current favorite YouTubers are: Vinesauce & Vargskelethor</p>
+                        <p>I've also been watching more shows recently, so here's a few of my favories!</p>
+                        <ul>
+                            <li>The Office</li>
+                            <li>The Good Place</li>
+                            <li>Squid Game</li>
+                            <li>South Park</li>
+                            <li>MasterChef</li>
+                        </ul>
+                        <p>My current favorite show is: Brooklyn 99 ^_^</p>
+                        <p>I haven't seen many movies, but my current top pick would be Hot Frosty (it's PEAK)</p>
+                    </div>
+                    <div style="display: none;" class="content">
+                        <span id="aboutHeader">Aidan's Top Website Picks!</span>
+                        <p>Here are some fun/interesting websites that I've found over my time on the internet!</p>
+                        <p id="minorHeader">Neocities <a id="minorLink" target="_blank" href="https://neocities.org/browse">[Click Here!]</a></p>
+                        <p>This website is actually a giant collection of personal websites, brimming with creativity and early 1990s-2000s vibes.</p>
+                        <p>For me, it's easy to get lost for hours, clicking from website to website, and it can be really inspiring creatively looking at what other people have made.</p>
+                        <p id="minorHeader">Windows93 <a id="minorLink" target="_blank" href="https://www.windows93.net/">[Click Here!]</a></p>
+                        <p>An operating system in your browser, packed with games, tools, and a lot of charm.</p>
+                        <p>The games can be pretty fun, but they're mostly joke programs.</p>
+                        <p id="minorHeader">Neal.fun <a id="minorLink" target="_blank" href="https://neal.fun/">[Click Here!]</a></p>
+                        <p>A collection of games and other informative programs made by Neal.</p>
+                        <p>My personal favorites include Infinite Craft, Spend Bill Gate's Money, The Password Game, Stimulation Clicker, and Internet Artifacts.</p>
+                        <p id="minorHeader">The Useless Web <a id="minorLink" target="_blank" href="https://www.decisionproblem.com/paperclips/index2.html">[Click Here!]</a></p>
+                        <p>A bunch of fun, random, and useless websites, all at the press of a button.</p>
+                        <p>This is one of the earliest websites I remember showing my friends, and can be pretty fun to browse when bored.</p>
+                        <p id="minorHeader">Universal Paperclips <a id="minorLink" target="_blank" href="https://www.decisionproblem.com/paperclips/index2.html">[Click Here!]</a></p>
+                        <p>One of the earlist and most popular incremental games, where the goal is to make as many paperclips as possible.</p>
+                        <p>An easy way to sink a few hours when bored in class.</p>
+                        <p id="minorHeader">Piskel <a id="minorLink" target="_blank" href="https://www.piskelapp.com/p/create/sprite">[Click Here!]</a></p>
+                        <p>A free pixel art editor, allowing you to make art and animations in the website.</p>
+                        <p>It's pretty fun to play around with, and anything you make can be exported and used elsewhere.</p>
+                        <p id="minorHeader">Vimm's Lair <a id="minorLink" target="_blank" href="https://vimm.net/vault">[Click Here!]</a></p>
+                        <p>This website has a ton of old console games, from the Atari 2600 all the way up to the Wii.</p>
+                        <p>I mainly use this website to download old Pokemon games from the DS and Wii era.</p>
+                </div>
+                <div style="display: none;" class="content">
+                    <span id="aboutHeader">Class Projects</span>
+                    <p>nothing to see here (yet...)</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
