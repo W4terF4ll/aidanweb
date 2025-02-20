@@ -186,7 +186,16 @@ a {
     padding-left: 5px;
     padding-right: 5px;
 }
-#divSide{
+#divSideInt{
+    color: #14a642;
+    border: 1px solid #5afaaa;
+    background: #c4ffe0;
+}
+#divSideIntHeader {
+    color: #14a642;
+    background: linear-gradient(90deg, #5afaaa, #94ffb8);
+}
+.divSide{
     border: 1px solid #94BBFF;
     background: #C4D0FF;
     font-size: 16px;
@@ -195,7 +204,15 @@ a {
 #divSideHeader {
     background: linear-gradient(90deg, #94BBFF, lightblue);
 }
-#divSide span {
+#divSideSection {
+    text-align: center;
+    width: 70px;
+    display: inline-block;
+    border: 1px solid #5afaaa;
+    color: #14a642;
+    background: linear-gradient(90deg, #5afaaa, #94ffb8);
+}
+#divSideSpan {
     cursor: pointer;
     display: block;
     line-height: normal;
@@ -208,7 +225,19 @@ a {
     transition: transform .2s;
     transform-origin: left; 
 }
-#divSide p {
+#divSideIntSpan {
+    display: block;
+    line-height: normal;
+    height: 17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: PixelOperator;
+    transition: transform .2s;
+    transform-origin: left; 
+}
+.divSide p {
     margin-left: 5px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -216,7 +245,7 @@ a {
     font-size: 16px;
     font-family: PixelOperator;
 }
-#divSide span:hover {
+#divSideSpan:hover {
     display: block;
     transform: scale(1.1);
     transform-origin: left; 
